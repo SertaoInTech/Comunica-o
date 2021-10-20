@@ -1,0 +1,30 @@
+Descrição do domínio da aplicação
+
+●	Usuários(as)
+
+Pollianna Santos, Bárbara Pestalozzi e demais gestores do Centro Integrado de Saúde (CIS), além dos professores(as) e profissionais que atuam no CIS.
+
+●	O que irá ser desenvolvido
+
+Um sistema de agendamento por dia e horário das salas disponíveis para melhor organização do funcionamento do Centro Integrado de Saúde da UniFG.
+A ferramenta de design escolhida foi a Figma, a linguagem escolhida para o desenvolvimento do sistema foi o Javascript. 
+
+User Stories
+
+1.	Como gestora do CIS, quero poder pesquisar no sistema quais salas estão ocupadas para um determinado dia e horário;
+
+2.	Como gestora do CIS, quero poder selecionar todas as planilhas com as solicitações de sala dos coordenadores e que o sistema identifique os choques de horário existentes;
+
+3.	Como gestora do CIS, quero poder ter uma lista persistente dos agendamentos que tiveram choques de horário e desejo poder marcar um agendamento que teve choque como resolvido;
+
+4.	Como gestora do CIS, quero poder cadastrar manualmente um agendamento de uma sala para um professor(a), desde que a sala não esteja ocupada ou reservada;
+
+5.	Como gestora do CIS, quero realizar pesquisas por sala, professor(a), horário ou dia;
+
+6.	Como gestora do CIS, quero poder visualizar para quem está reservada uma determinada sala e em qual(ais) horário(os).
+
+7.	Como gestora do CIS, quero poder alterar um agendamento, mudando o horário e/ou sala agendada para um determinado professor(a);
+
+8.	Como professor(a), quero poder visualizar as salas que estão disponíveis e ocupadas em um determinado horário, dia ou semana;
+
+9.	Como professor(a), quero poder realizar pesquisas por sala, horário e dia;
