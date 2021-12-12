@@ -1,0 +1,104 @@
+1.INTRODUÇÃO
+
+O projeto de software CISS visa a construção de um sistema de agendamento para horário das salas disponíveis para melhor organização do funcionamento do Centro Integrado de Saúde da UniFG. Em primeiro momento a aplicação focará na identificação de conflitos de agendamentos nas salas, mas ao decorrer do projeto Sertão na tecnologia mais atualizações serão adicionadas ao sistema.
+
+2.CENÁRIO ATUAL
+
+No momento o Centro Integrado de Saúde realiza os agendamentos através de planilhas do Excel na qual os professores enviam para os coordenadores avaliarem a existência de choques nos agendamentos das salas e formalizarem os horários agendados. 
+
+3.PREMISSAS
+
+Dessa forma, esse projeto visa o aumento da eficiência nos agendamentos e na análise dos choques de horários da Centro Integrado de Saúde da UNIFG. 
+
+4.RESTRIÇÕES
+
+Em primeiro momento o software focará na análise dos choques para que a coordenadora do CISS os reagende.
+
+5. REQUISITOS FUNCIONAIS 
+
+RF001 - Como gestora do CIS, quero poder visualizar um relatório de ocupação semanal, mensal, semestral e/ou anual.
+RF002 - Como professor(a), quero poder realizar pesquisas por sala, horário e dia.
+RF003 - Como professor(a), quero poder visualizar as salas que estão disponíveis e ocupadas em um determinado horário, dia ou semana.
+RF004 - Como gestora do CIS, quero poder alterar um agendamento, mudando o horário e/ou sala agendada para um determinado professor(a).
+RF005 - Como gestora do CIS, quero realizar pesquisas por sala, professor(a), horário ou dia.
+RF006 - Como gestora do CIS, quero poder visualizar para quem está reservada uma determinada sala e em qual(ais) horário(os).
+RF007 - Como gestora do CIS, quero poder cadastrar manualmente um agendamento de uma sala para um professor(a), desde que a sala não esteja ocupada.
+RF008 - Como gestora do CIS, quero poder ter uma lista persistente dos agendamentos que tiveram choques de horário e desejo poder marcar um agendamento que teve choque como resolvido.
+RF009 - Como gestora do CIS, quero poder selecionar todas as planilhas com as solicitações de sala dos coordenadores e que o sistema identifique os choques de horário existentes.
+RF010 - Como gestora do CIS, quero poder pesquisar no sistema quais salas estão ocupadas para um determinado dia e horário.
+
+6. PROTÓTIPO
+
+Link para mockup do projeto:
+ https://www.figma.com/team_invite/redeem/MyqfmIhaSB1rIPkXnoQRRH
+
+7. END POINTS 
+
+End points da API do Sertão In Tech.
+Todas as rotas só poderão ser acessadas através de um token que é gerado após o login do usuário. 
+
+7.1. ROTAS DE LOGIN DO USUÁRIO
+Rotas de login do usuário:
+
+HTTP://dominio/users > METODO DE VERBO GET;
+
+HTTP://dominio/users > METODO DE VERBO POST;
+
+HTTP://dominio/users/:USER_ID > METODO DE VERBO PUT;
+
+HTTP://dominio/users/:USER_ID > METODO DE VERBO DELETE;
+
+HTTP://dominio/users/login > METODO DE VERBO POST;
+
+7.2. ROTAS DAS SALAS
+Rotas das salas:
+
+HTTP://dominio/space > METODO DE VERBO GET;
+
+HTTP://dominio/space > METODO DE VERBO POST;
+
+HTTP://dominio/space/:sala_id > METODO DE VERBO PUT;
+
+HTTP://dominio/space/:sala_id > METODO DE VERBO DELETE;
+
+7.3. ROTAS DAS MATERIAS/ DISCIPLINAS:
+Rotas das matérias/disciplinas:
+
+HTTP://dominio/discipline > METODO DE VERBO GET;
+
+HTTP://dominio/discipline > METODO DE VERBO POST;
+
+HTTP://dominio/discipline/:discipline_id > METODO DE VERBO PUT;
+
+HTTP://dominio/discipline/:discipline_id > METODO DE VERBO DELETE;
+
+7.4. ROTAS DOS CONTATOS
+Rotas dos contatos:
+
+HTTP://dominio/contacts > METODO DE VERBO GET;
+
+HTTP://dominio/contacts > METODO DE VERBO POST;
+
+HTTP://dominio/contacts/:contacts_id > METODO DE VERBO PUT;
+
+HTTP://dominio/contacts/:contacts_id > METODO DE VERBO DELETE;
+
+7.5. ROTAS DO PROFESSORES
+Rotas dos professores:
+
+HTTP://dominio/teachers > METODO DO VERBO GET
+
+HTTP://dominio/teachers > METODO DO VERBO POST;
+
+HTTP://dominio/teachers/:teacher_id METODO DE VERBO PUT;
+
+HTTP://dominio/teachers/:teacher_id METODO DE VERBO DELETE;
+
+7.6. ROTA DO ARQUIVO EM LOTE XLSX
+Rota do arquivo em lote xlsx:
+
+HTTP://dominio/upload > METODO DO VERBO POST;
+
+
+
+
